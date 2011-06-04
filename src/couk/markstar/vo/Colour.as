@@ -20,7 +20,7 @@ public class Colour
 
 	public function get blue():uint
 	{
-		return 10;
+		return 0;
 	}
 }
 }
