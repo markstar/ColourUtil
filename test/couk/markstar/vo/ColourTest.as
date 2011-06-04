@@ -128,5 +128,13 @@ public class ColourTest
 		instance.hex = 0xCCCCCC;
 		assertEquals( 0xCCCCCC, instance.hex );
 	}
+
+	[Test]
+	public function hex_hexSetTo123456_returns123456():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0x123456;
+		assertEquals( 0x123456, instance.hex );
+	}
 }
 }
