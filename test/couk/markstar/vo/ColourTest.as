@@ -184,5 +184,23 @@ public class ColourTest
 		instance.blue = 255;
 		assertEquals( 0x0000FF, instance.hex );
 	}
+
+	[Test]
+	public function hex_hexSetToFFCC99ThenSubtract102FromRed_returns99CC99():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0xFFCC99;
+		instance.red -= 102;
+		assertEquals( 0x99CC99, instance.hex );
+	}
+
+	[Test]
+	public function hex_hexSetToFFCC99ThenAdd102ToBlue_returnsFFCCFF():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0xFFCC99;
+		instance.blue += 102;
+		assertEquals( 0xFFCCFF, instance.hex );
+	}
 }
 }
