@@ -207,8 +207,32 @@ public class ColourTest
 	public function red_redSetToValueOver255_returns255():void
 	{
 		var instance:Colour = new Colour();
-		instance.red = 1000;
+		instance.red = 256;
 		assertEquals( 255, instance.red );
+	}
+
+	[Test]
+	public function green_greenSetToValueOver255_returns255():void
+	{
+		var instance:Colour = new Colour();
+		instance.green = 256;
+		assertEquals( 255, instance.green );
+	}
+
+	[Test]
+	public function blue_blueSetToValueOver255_returns255():void
+	{
+		var instance:Colour = new Colour();
+		instance.blue = 256;
+		assertEquals( 255, instance.blue );
+	}
+
+	[Test]
+	public function hex_hexSetToValueOverFFFFFF_returnsFFFFFF():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0xF000000;
+		assertEquals( 0xFFFFFF, instance.hex );
 	}
 }
 }

@@ -30,6 +30,7 @@ public class Colour
 
 	public function set hex( value:uint ):void
 	{
+		value = value > 0xFFFFFF ? value = 0xFFFFFF : value;
 		_red = value >> 16;
 		_green = value >> 8 & 0xFF;
 		_blue = value & 0xFF;
@@ -37,17 +38,17 @@ public class Colour
 
 	public function set red( value:uint ):void
 	{
-		_red = value;
+		_red = value > 0xFF ? 0xFF : value;
 	}
 
 	public function set green( value:uint ):void
 	{
-		_green = value;
+		_green = value > 0xFF ? 0xFF : value;
 	}
 
 	public function set blue( value:uint ):void
 	{
-		_blue = value;
+		_blue = value > 0xFF ? 0xFF : value;
 	}
 }
 }
