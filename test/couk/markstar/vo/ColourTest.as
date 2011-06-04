@@ -80,5 +80,45 @@ public class ColourTest
 		instance.hex = 0x00FF00;
 		assertEquals( 255, instance.green );
 	}
+
+	[Test]
+	public function green_hexSetTo009900_shouldBe153():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0x009900;
+		assertEquals( 153, instance.green );
+	}
+
+	[Test]
+	public function green_hexSetToCCCCCC_shouldBe204():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0xCCCCCC;
+		assertEquals( 204, instance.green );
+	}
+
+	[Test]
+	public function blue_hexSetTo0000FF_shouldBe255():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0x0000FF;
+		assertEquals( 255, instance.blue );
+	}
+
+	[Test]
+	public function blue_hexSetTo000099_shouldBe153():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0x000099;
+		assertEquals( 153, instance.blue );
+	}
+
+	[Test]
+	public function blue_hexSetToCCCCCC_shouldBe204():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0xCCCCCC;
+		assertEquals( 204, instance.blue );
+	}
 }
 }
