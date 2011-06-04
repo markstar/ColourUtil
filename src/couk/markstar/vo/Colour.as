@@ -48,5 +48,9 @@ public class Colour
 	{
 		_green = value;
 	}
+
+	public function set blue( value:uint ):void
+	{
+	}
 }
 }
