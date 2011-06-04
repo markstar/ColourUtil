@@ -1,5 +1,6 @@
 package couk.markstar.vo
 {
+import flash.sampler._getInvocationCount;
 
 public class Colour
 {
@@ -33,7 +34,7 @@ public class Colour
 	public function set hex( value:uint ):void
 	{
 		_red = value >> 16;
-		_green = value | 0xFF0000 >> 8;
+		_green = value >> 8 & 0xFF;
 	}
 }
 }
