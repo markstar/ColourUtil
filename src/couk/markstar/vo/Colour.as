@@ -51,6 +51,7 @@ public class Colour
 
 	public function set blue( value:uint ):void
 	{
+		_blue = value;
 	}
 }
 }
