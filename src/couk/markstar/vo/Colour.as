@@ -22,5 +22,10 @@ public class Colour
 	{
 		return 0;
 	}
+
+	public function get hex():uint
+	{
+		return 10;
+	}
 }
 }
