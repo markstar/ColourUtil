@@ -15,42 +15,42 @@ public class ColourTest
 	public var context:Sprite;
 
 	[Test]
-	public function constructor_instantiated_shouldBeInstanceOfColour():void
+	public function constructor_instantiated_returnsInstanceOfColour():void
 	{
 		var instance:Colour = new Colour();
 		assertTrue( "instance is Colour", instance is Colour );
 	}
 
 	[Test]
-	public function red_colorInstantiated_shouldBeZero():void
+	public function red_colorInstantiated_returnsZero():void
 	{
 		var instance:Colour = new Colour();
 		assertEquals( 0, instance.red );
 	}
 
 	[Test]
-	public function green_colorInstantiated_shouldBeZero():void
+	public function green_colorInstantiated_returnsZero():void
 	{
 		var instance:Colour = new Colour();
 		assertEquals( 0, instance.green );
 	}
 
 	[Test]
-	public function blue_colorInstantiated_shouldBeZero():void
+	public function blue_colorInstantiated_returnsZero():void
 	{
 		var instance:Colour = new Colour();
 		assertEquals( 0, instance.blue );
 	}
 
 	[Test]
-	public function hex_colorInstantiated_shouldBeZero():void
+	public function hex_colorInstantiated_returnsZero():void
 	{
 		var instance:Colour = new Colour();
 		assertEquals( 0, instance.hex );
 	}
 
 	[Test]
-	public function red_hexSetToFF0000_shouldBe255():void
+	public function red_hexSetToFF0000_returns255():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0xFF0000;
@@ -58,7 +58,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function red_hexSetTo990000_shouldBe153():void
+	public function red_hexSetTo990000_returns153():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0x990000;
@@ -66,7 +66,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function red_hexSetToCCCCCC_shouldBe204():void
+	public function red_hexSetToCCCCCC_returns204():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0xCCCCCC;
@@ -74,7 +74,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function green_hexSetTo00FF00_shouldBe255():void
+	public function green_hexSetTo00FF00_returns255():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0x00FF00;
@@ -82,7 +82,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function green_hexSetTo009900_shouldBe153():void
+	public function green_hexSetTo009900_returns153():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0x009900;
@@ -90,7 +90,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function green_hexSetToCCCCCC_shouldBe204():void
+	public function green_hexSetToCCCCCC_returns204():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0xCCCCCC;
@@ -98,7 +98,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function blue_hexSetTo0000FF_shouldBe255():void
+	public function blue_hexSetTo0000FF_returns255():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0x0000FF;
@@ -106,7 +106,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function blue_hexSetTo000099_shouldBe153():void
+	public function blue_hexSetTo000099_returns153():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0x000099;
@@ -114,7 +114,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function blue_hexSetToCCCCCC_shouldBe204():void
+	public function blue_hexSetToCCCCCC_returns204():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0xCCCCCC;
@@ -122,7 +122,7 @@ public class ColourTest
 	}
 
 	[Test]
-	public function hex_hexSetToCCCCCC_shouldBeCCCCCC():void
+	public function hex_hexSetToCCCCCC_returnsCCCCCC():void
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0xCCCCCC;
