@@ -20,5 +20,12 @@ public class ColourTest
 		var instance:Colour = new Colour();
 		assertTrue( "instance is Colour", instance is Colour );
 	}
+
+	[Test]
+	public function red_colorInstantiated_shouldBeZero():void
+	{
+		var instance:Colour = new Colour();
+		assertEquals( 0, instance.red );
+	}
 }
 }

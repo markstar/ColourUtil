@@ -7,5 +7,10 @@ public class Colour
 	public function Colour()
 	{
 	}
+
+	public function get red():uint
+	{
+		return 10;
+	}
 }
 }
