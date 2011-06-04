@@ -8,10 +8,6 @@ public class Colour
 	protected var _green:uint;
 	protected var _blue:uint;
 
-	public function Colour()
-	{
-	}
-
 	public function get red():uint
 	{
 		return _red;
