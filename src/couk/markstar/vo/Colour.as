@@ -1,7 +1,5 @@
 package couk.markstar.vo
 {
-import flash.sampler._getInvocationCount;
-
 public class Colour
 {
 	protected var _red:uint;
