@@ -12,5 +12,10 @@ public class Colour
 	{
 		return 0;
 	}
+
+	public function get green():uint
+	{
+		return 10;
+	}
 }
 }
