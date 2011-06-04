@@ -138,6 +138,14 @@ public class ColourTest
 	}
 
 	[Test]
+	public function red_redSetTo255_returns255():void
+	{
+		var instance:Colour = new Colour();
+		instance.red = 255;
+		assertEquals( 255, instance.red );
+	}
+
+	[Test]
 	public function hex_redSetTo255_returnsFF0000():void
 	{
 		var instance:Colour = new Colour();
