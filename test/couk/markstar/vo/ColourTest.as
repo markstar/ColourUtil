@@ -78,7 +78,7 @@ public class ColourTest
 	{
 		var instance:Colour = new Colour();
 		instance.hex = 0x00FF00;
-		assertEquals( 255, instance.blue );
+		assertEquals( 255, instance.green );
 	}
 }
 }
