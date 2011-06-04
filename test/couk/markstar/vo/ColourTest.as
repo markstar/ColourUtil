@@ -48,5 +48,13 @@ public class ColourTest
 		var instance:Colour = new Colour();
 		assertEquals( 0, instance.hex );
 	}
+
+	[Test]
+	public function red_hexSetToFF0000_shouldBe255():void
+	{
+		var instance:Colour = new Colour();
+		instance.hex = 0xFF0000;
+		assertEquals( 255, instance.red );
+	}
 }
 }
