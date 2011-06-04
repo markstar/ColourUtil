@@ -1,19 +1,23 @@
-package {
-    import asunit.core.TextCore;
-    import flash.display.MovieClip;
+package
+{
+import asunit.core.TextCore;
 
-    public class ColourUtilRunner extends MovieClip {
-        
-        private var core:TextCore;
+import flash.display.MovieClip;
 
-        public function ColourUtilRunner() {
-            core = new TextCore();
-            // You can run a single Test Case with:
-            // core.start(SomeTest, null, this);
-            // Or a single test method with:
-            // core.start(SomeTest, 'testMethod', this);
-            core.start(AllTests, null, this);
-        }
-    }
+public class ColourUtilRunner extends MovieClip
+{
+
+	private var core:TextCore;
+
+	public function ColourUtilRunner()
+	{
+		core = new TextCore();
+		// You can run a single Test Case with:
+		// core.start(SomeTest, null, this);
+		// Or a single test method with:
+		// core.start(SomeTest, 'testMethod', this);
+		core.start( AllTests, null, this );
+	}
+}
 }
 

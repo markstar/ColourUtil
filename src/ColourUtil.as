@@ -1,11 +1,13 @@
-package {
-    import flash.display.Sprite;
+package
+{
+import flash.display.Sprite;
 
-    public class ColourUtil extends Sprite {
+public class ColourUtil extends Sprite
+{
 
-        public function ColourUtil() {
-            trace(">> ColourUtil Instantiated!");
-        }
-    }
+	public function ColourUtil()
+	{
+		trace( ">> ColourUtil Instantiated!" );
+	}
 }
-
+}
