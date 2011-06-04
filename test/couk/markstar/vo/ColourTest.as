@@ -202,5 +202,13 @@ public class ColourTest
 		instance.blue += 102;
 		assertEquals( 0xFFCCFF, instance.hex );
 	}
+
+	[Test]
+	public function red_redSetToValueOver255_returns255():void
+	{
+		var instance:Colour = new Colour();
+		instance.red = 1000;
+		assertEquals( 255, instance.red );
+	}
 }
 }
