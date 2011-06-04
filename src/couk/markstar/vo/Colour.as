@@ -29,7 +29,7 @@ public class Colour
 
 	public function get hex():uint
 	{
-		return 0;
+		return  _red << 16 | _green << 8 | _blue;
 	}
 
 	public function set hex( value:uint ):void
