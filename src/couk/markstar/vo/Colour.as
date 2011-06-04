@@ -38,5 +38,9 @@ public class Colour
 		_green = value >> 8 & 0xFF;
 		_blue = value & 0xFF;
 	}
+
+	public function set red( red:uint ):void
+	{
+	}
 }
 }
