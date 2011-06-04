@@ -6,6 +6,7 @@ public class Colour
 {
 	protected var _red:uint;
 	protected var _green:uint;
+	protected var _blue:uint;
 
 	public function Colour()
 	{
@@ -23,7 +24,7 @@ public class Colour
 
 	public function get blue():uint
 	{
-		return 0;
+		return _blue;
 	}
 
 	public function get hex():uint
@@ -35,6 +36,7 @@ public class Colour
 	{
 		_red = value >> 16;
 		_green = value >> 8 & 0xFF;
+		_blue = value & 0xFF;
 	}
 }
 }
