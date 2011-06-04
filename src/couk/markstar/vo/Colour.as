@@ -15,7 +15,7 @@ public class Colour
 
 	public function get green():uint
 	{
-		return 10;
+		return 0;
 	}
 }
 }
