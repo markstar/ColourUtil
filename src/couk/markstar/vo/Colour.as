@@ -3,6 +3,7 @@ package couk.markstar.vo
 
 public class Colour
 {
+	protected var _red:uint;
 
 	public function Colour()
 	{
@@ -10,7 +11,7 @@ public class Colour
 
 	public function get red():uint
 	{
-		return 0;
+		return _red;
 	}
 
 	public function get green():uint
@@ -28,8 +29,9 @@ public class Colour
 		return 0;
 	}
 
-	public function set hex( hex:uint ):void
+	public function set hex( value:uint ):void
 	{
+		_red = value >> 16;
 	}
 }
 }
