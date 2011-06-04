@@ -39,7 +39,12 @@ public class Colour
 		_blue = value & 0xFF;
 	}
 
-	public function set red( red:uint ):void
+	public function set red( value:uint ):void
+	{
+		_red = value;
+	}
+
+	public function set green( value:uint ):void
 	{
 	}
 }

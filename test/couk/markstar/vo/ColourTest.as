@@ -150,7 +150,23 @@ public class ColourTest
 	{
 		var instance:Colour = new Colour();
 		instance.red = 255;
-		assertEquals( 0x123456, instance.hex );
+		assertEquals( 0xFF0000, instance.hex );
+	}
+
+	[Test]
+	public function green_greenSetTo255_returns255():void
+	{
+		var instance:Colour = new Colour();
+		instance.green = 255;
+		assertEquals( 255, instance.green );
+	}
+
+	[Test]
+	public function hex_greenSetTo255_returnsFF0000():void
+	{
+		var instance:Colour = new Colour();
+		instance.green = 255;
+		assertEquals( 0x00FF00, instance.hex );
 	}
 }
 }
