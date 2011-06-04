@@ -25,7 +25,7 @@ public class Colour
 
 	public function get hex():uint
 	{
-		return 10;
+		return 0;
 	}
 }
 }
